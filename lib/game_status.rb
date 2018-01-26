@@ -47,3 +47,6 @@ def winner
   if !won?(board) || !over?(board)
     return nil
   elsif won?(board) return board[win_combination[0]]
+  else false
+  end
+end
