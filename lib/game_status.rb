@@ -36,11 +36,10 @@ end
 end
 
 def draw?(board)
-  if board.all?("X" || "O")
-    return true
-  else false
+  full?(board) ? !won?(board) : false  
   end
 end
+
 
 
 
