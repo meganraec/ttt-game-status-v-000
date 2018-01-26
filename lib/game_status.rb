@@ -2,7 +2,7 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-board = Array.new(9, " ")
+board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 
 WIN_COMBINATIONS = [
   [0, 1, 2], #[0]
@@ -14,18 +14,6 @@ WIN_COMBINATIONS = [
   [0, 4, 8], #[6]
   [2, 4, 6]  #[7]
 ]
-
-=begin
-win = WIN_COMBINATIONS[0] ||
-      WIN_COMBINATIONS[1] ||
-      WIN_COMBINATIONS[2] ||
-      WIN_COMBINATIONS[3] ||
-      WIN_COMBINATIONS[4] ||
-      WIN_COMBINATIONS[5] ||
-      WIN_COMBINATIONS[6] ||
-      WIN_COMBINATIONS[7] ||
-      WIN_COMBINATIONS[8]
-=end
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
