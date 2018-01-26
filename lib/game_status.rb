@@ -16,19 +16,18 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_index|
-  win_index.each do |position|
-
-  if position[0] == "X" && position[1] == "X" && position[2] == "X"
-    return true
-  elsif position[0] == "O" && position[1] == "O" && position[2] == "O"
-    return true
+  WIN_COMBINATIONS.each do |win_combination|
+    if ((board[win_combination[0]] == board[win_combination[1]]) &&
+        (board[win_combination[1]] == board[win_combinatino[2]]) &&
+        (board[win_combination[2]] == board[win_combination[0]]) &&
+        (board[win_combination[0]] == "X" || board[win_combination[0]] == "O"))
+        return true
+    end
   elsif board = Array.new(9, " ")
     return false
   else false
       end
     end
-  end
   board
 end
 
