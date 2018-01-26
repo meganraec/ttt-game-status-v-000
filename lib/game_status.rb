@@ -29,9 +29,9 @@ def won?(board)
 end
 
 def full?(board)
-  if board.all? == "X" || "O"
+  if board.all? == "X" || board.all? == "O"
   return true
-elsif board.any? = " " || ""
+elsif board.any? == " " || board.any? ==""
   return false
 else false
 end
