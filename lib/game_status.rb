@@ -31,8 +31,8 @@ end
 def full?(board)
   if board.all? == "X" || "O"
   return true
-  else false
 end
+return false
 end
 
 #def draw?(board)
