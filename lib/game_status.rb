@@ -24,12 +24,9 @@ def won?(board)
         return true
     end
   end
-  if board = Array.new(9, " ")
-    return false
-  else false
-    end
-  board
+  return false
 end
+
 
 =begin
     for each win_combination in WIN_COMBINATIONS
