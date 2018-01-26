@@ -19,6 +19,11 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_index|
   win_index.each do |position|
 
+  if position[0] == "X" && position[1] == "X" && position[2] == "X"
+    return true
+  elsif position[0] == "O" && position[1] == "O" && position[2] == "O"
+    return true  
+
   if board = Array.new(9, " ")
     return false
   elsif board
