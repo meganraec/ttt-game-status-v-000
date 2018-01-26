@@ -35,7 +35,12 @@ def full?(board)
 end
 end
 
-#def draw?(board)
+def draw?(board)
+  if board.full? 
+    return true
+  end
+  
+
 
 #def over?
 
