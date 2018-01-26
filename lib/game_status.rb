@@ -47,6 +47,6 @@ def winner(board)
   if !won?(board) || !over?(board)
     return nil
   else won?(board)
-    return won?(board)
+    return "#{won?(board)[0]}"
   end
 end
