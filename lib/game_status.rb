@@ -35,6 +35,7 @@ elsif board.any? = " " || ""
   return false
 else false
 end
+end
 
 #def draw?(board)
 
