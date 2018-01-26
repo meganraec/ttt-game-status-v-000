@@ -23,10 +23,10 @@ def won?(board)
         (board[win_combination[0]] == "X" || board[win_combination[0]] == "O"))
         return true
     end
-  elsif board = Array.new(9, " ")
+  end
+  if board = Array.new(9, " ")
     return false
   else false
-      end
     end
   board
 end
