@@ -15,6 +15,7 @@ WIN_COMBINATIONS = [
   [2, 4, 6]  #[7]
 ]
 
+=begin
 win = WIN_COMBINATIONS[0] ||
       WIN_COMBINATIONS[1] ||
       WIN_COMBINATIONS[2] ||
@@ -24,6 +25,7 @@ win = WIN_COMBINATIONS[0] ||
       WIN_COMBINATIONS[6] ||
       WIN_COMBINATIONS[7] ||
       WIN_COMBINATIONS[8]
+=end
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_index|
@@ -59,8 +61,7 @@ end
     false
   end
 end
-=end
-end
+
 
 def full?(board)
   if board.all? == "X" || "O"
@@ -69,7 +70,8 @@ elsif board.any? = " " || ""
 else false
 end
 
-def draw?
+def draw?(board)
+
 =begin
 draw_board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 draw?(draw_board) #=> true
@@ -79,7 +81,7 @@ draw?(x_diagonal_won) #=> false
 
 incomplete_board = ["X", " ", "X", " ", "X", " ", "O", "O", "X"]
 draw?(incomplete_board) #=> false
-=end
+
 end
 
 def over?
@@ -92,7 +94,7 @@ over?(won_board) #=> true
 
 inprogress_board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
 over?(inprogress_board) #=> false
-=end
+
 end
 
 def winner
@@ -105,5 +107,6 @@ winner(o_win_center_column) #=> "O"
 
 no_winner_board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
 winner(no_winner_board) #=> nil
-=end
+
 end
+=end
