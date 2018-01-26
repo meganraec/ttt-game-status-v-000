@@ -22,6 +22,7 @@ def won?(board)
         (board[win_combination[1]] == board[win_combination[2]]) &&
         (board[win_combination[2]] == board[win_combination[0]]))
         win_combination
+        true
     end
   end
   return false
