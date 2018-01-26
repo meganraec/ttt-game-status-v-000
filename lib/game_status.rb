@@ -39,6 +39,8 @@ def draw?(board)
   if board.full?
     return true
   end
+end
+
 
 
 
