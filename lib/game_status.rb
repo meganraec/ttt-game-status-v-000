@@ -36,10 +36,10 @@ end
 end
 
 def draw?(board)
-  if board.full? 
+  if board.full?
     return true
   end
-  
+
 
 
 #def over?
