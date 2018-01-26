@@ -31,7 +31,9 @@ end
 def full?(board)
   if board.any? == " " || ""
   return false
-else true
+  elsif board.all? == "X" || "O"
+  return true
+else false
 end
 end
 
