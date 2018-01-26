@@ -46,4 +46,4 @@ end
 def winner
   if !won?(board) || !over?(board)
     return nil
-  elsif won?(board) 
+  elsif won?(board) return board[win_combination[0]]
